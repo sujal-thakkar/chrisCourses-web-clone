@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 body {
   margin: 0;
@@ -6,14 +6,20 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #121826;
 }
 
-h1, p {
+h1, .stats
+p, h2 {
   margin: 0;
 }
 
 .bg-gray-900 {
   background-color: #121826;
+}
+
+.bg-black {
+  background-color: #000;
 }
 
 .text-white {
@@ -36,8 +42,8 @@ h1, p {
   justify-content: center;
 }
 
-.justify-between{
-    justify-content: space-between;
+.justify-between {
+  justify-content: space-between;
 }
 
 .align-center {
@@ -57,9 +63,19 @@ h1, p {
   padding-bottom: 8px;
 }
 
+.py-22px {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
 .px-20 {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.px-22 {
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .no-text-decor {
@@ -67,14 +83,13 @@ h1, p {
 }
 
 .signup-btn {
-  padding: 10px 25px;
+  padding: 12px 28px;
   font-family: "Lato", serif;
-  background-color: #539D98;
+  background-color: #539d98;
   border: none;
   color: #fff;
   font-size: 14px;
   border-radius: 56px;
-  font-weight: bold;
   cursor: pointer;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -82,6 +97,10 @@ h1, p {
 
 .w-full {
   width: 100%;
+}
+
+.stats-border {
+  border-bottom: 1px solid #4D5562;
 }
 
 .relative {
@@ -97,16 +116,149 @@ h1, p {
 }
 
 .text-color-teal {
-  color: #90CAC7;
+  color: #90cac7;
 }
 
 .hero-btn {
   border: none;
   background-color: #fff;
-  color: #539D98;
+  color: #539d98;
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
-  padding: 10px 25px;
+  padding: 15px 30px;
   font-family: "Lato", serif;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-36px {
+  font-size: 36px;
+}
+
+.text-16px {
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-570 {
+  height: 570px;
+}
+
+.inset-0 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.inset-header {
+  top: 0;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.stats h2 {
+  color: #7575D7;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 65px;
+}
+
+.stats p {
+  color: #D2D5DA;
+  font-weight: 400;
+  size: 18px;
+  line-height: 23.4px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.top-150px {
+  top: -150px;
+}
+
+.linear-gradient {
+  background: rgb(0, 0, 0);
+
+  background: linear-gradient(
+    180deg,
+    #0f172a 0%,
+    #00000082 50%,
+    rgb(0 0 0 / 0%) 100%
+  );
+}
+
+@media (min-width: 640px) {
+  /* everything inside media queries will be for desktop view(>640px), all of the styles outside of it will be for mobile view (<640px) */
+  .dt\:text-60px {
+    font-size: 60px;
+  }
+  .dt\:text-20px {
+    font-size: 20px;
+  }
+  .dt\:w-150 {
+    width: auto;
+  }
+  .dt\:pt-100 {
+    padding-top: 100px;
+  }
+  .dt\:h-689 {
+    height: 689px;
+  }
+  .dt\:hide {
+    display: none;
+  }
+  .dt\:unhide {
+    display: block;
+  }
+}
+
+@media (min-width: 770px) {
+  .dt\:unhide-block {
+    display: block;
+  }
+  .dt\:hide-menu {
+    display: none;
+  }
+  .dt\:stats {
+    display: flex;
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .w-33percent {
+    width: 33%;
+  }
+  .dt\:border {
+    border-bottom: none;
+    border-right: 1px solid #4D5562;
+  }
+}
+
+@media (min-width: 770px) {
+  .dt\:unhide-flex {
+    display: flex;
+  }
 }
